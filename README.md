@@ -25,15 +25,7 @@ This project demonstrates IT Help Desk operations using a **ServiceNow Personal 
 
 ## Project Walkthrough
 
-### Step 1 — Title
-Description of what you did.
-
-![Screenshot description](screenshot.png)
-
-### Step 2 — Title
-Description of what you did.
-
-![Screenshot description](screenshot.png)
+For a full step-by-step breakdown, see the
 
 ---
 
