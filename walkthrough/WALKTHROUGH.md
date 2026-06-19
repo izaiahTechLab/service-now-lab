@@ -26,16 +26,8 @@ To test the cross-platform integration, an end-to-end password lockout scenario 
 
 ---
 
-### Step 4 — Setting User Passwords
 
-Following initial user record creation and incoming ticket verification, account passwords were configured using the **Set Password** utility. Security controls were set to "Password never expires" strictly for isolated lab testing purposes.
-
-![Creating Password](Creating%20Password.jpg)
-
-
----
-
-### Step 5 — Account Remediation (Active Directory)
+### Step 4 — Account Remediation (Active Directory)
 
 Following help desk verification protocols, administrative actions were shifted to the Windows Server 2022 environment. The user's credentials were formally reset, updated, and unlocked within the Active Directory domain to remediate the lockout.
 
@@ -44,7 +36,7 @@ Following help desk verification protocols, administrative actions were shifted 
 
 ---
 
-### Step 6 — Incident Resolution in ServiceNow
+### Step 5 — Incident Resolution in ServiceNow
 
 With the Active Directory remediation completed and authentication verified, the incident ticket was formally updated to a **Resolved** status within the ServiceNow PDI, closing out the service loop.
 
