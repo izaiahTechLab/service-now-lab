@@ -12,16 +12,15 @@ Users were provisioned using a standardized corporate naming convention (`firstn
 ## Step 2 — Setting User Passwords
 Following initial user record creation, account passwords were configured using the **Set Password** utility. Security controls were set to "Password never expires" strictly for isolated lab testing purposes.
 
-![Creating Password](Creating_Password.jpg)
+![Creating Password](Creating%20Password.jpg)
 
 ---
 
 ## Step 3 — Creating Assignment Groups
 Five distinct assignment groups were created within ServiceNow to mirror the enterprise factions established in the AD lab environment: **TeamAqua**, **TeamGalactic**, **TeamMagma**, **TeamPlasma**, and **TeamRocket**.
 
-![Created Groups](Created_Groups_in_ServiceNow.jpg)
-
-![Assigning Groups](Assigning_Groups.jpg)
+![Created Groups](Created%20Groups%20in%20ServiceNow..jpg)
+![Assigning Groups](Assigning%20Groups.jpg)
 
 ---
 
