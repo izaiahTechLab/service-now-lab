@@ -5,7 +5,7 @@
 ## Step 1 — Creating Users in ServiceNow
 Users were provisioned using a standardized corporate naming convention (`firstname.faction`) to match the organizational structure of the Active Directory enterprise environment (e.g., `brodie.magma`).
 
-![Creating Users](Creating_Users_Service_Now.jpg)
+![Creating Users](Creating%20Users%20Service%20Now.jpg)
 
 ---
 
