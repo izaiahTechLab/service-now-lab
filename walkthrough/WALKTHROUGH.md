@@ -1,46 +1,51 @@
-# Project Walkthrough 🎫
+# Project Walkthrough 🗺️
 
 ---
 
-## Step 1 — Creating Users in ServiceNow
+### Step 1 — Creating Users in ServiceNow
+
 Users were provisioned using a standardized corporate naming convention (`firstname.faction`) to match the organizational structure of the Active Directory enterprise environment (e.g., `brodie.magma`).
 
 ![Creating Users](Creating%20Users%20Service%20Now.jpg)
 
 ---
 
-## Step 2 — Setting User Passwords
-Following initial user record creation, account passwords were configured using the **Set Password** utility. Security controls were set to "Password never expires" strictly for isolated lab testing purposes.
+### Step 2 — Creating Assignment Groups
 
-![Creating Password](Creating%20Password.jpg)
+Five distinct assignment groups were created within ServiceNow to mirror the enterprise factions established in the AD lab environment: **TeamAqua**, **TeamGalactic**, **TeamMagma**, **TeamPlasma**, and **TeamRocket**.
+
+![Created Groups](Created%20Groups%20in%20ServiceNow..jpg)
 
 ---
 
-## Step 3 — Creating Assignment Groups
-Five distinct assignment groups were created within ServiceNow to mirror the enterprise factions established in the AD lab environment: **TeamAqua**, **TeamGalactic**, **TeamMagma**, **TeamPlasma**, and **TeamRocket**.
+### Step 3 — Incident Triage & Simulation
 
+To test the cross-platform integration, an end-to-end password lockout scenario was simulated. An incoming incident ticket was generated and triaged within ServiceNow to log the user account issue and track its lifecycle.
+
+![Mars Incident](Mars%20Incident.jpg)
+
+---
+
+### Step 4 — Setting User Passwords
+
+Following initial user record creation and incoming ticket verification, account passwords were configured using the **Set Password** utility. Security controls were set to "Password never expires" strictly for isolated lab testing purposes.
+
+![Creating Password](Creating%20Password.jpg)
 ![Assigning Groups](Assigning%20Groups.jpg)
 
 ---
 
+### Step 5 — Account Remediation (Active Directory)
 
-## Step 4 — Incident Triage & Simulation
-An end-user, **Mars** (*TeamGalactic* group), submitted incident ticket `INC0010001` stating: *"I forgot my password and request a reset."* The ticket was successfully triaged and the state updated to **In Progress**.
+Following help desk verification protocols, administrative actions were shifted to the Windows Server 2022 environment. The user's credentials were formally reset, updated, and unlocked within the Active Directory domain to remediate the lockout.
 
-![Mars Incident Intake](Mars%20Incident.jpg)
-
----
-
-## Step 5 — Account Remediation (Active Directory)
-To address the credential issue, the administrator performed a secure password reset within **Active Directory Users and Computers** under the designated `TeamGalactic` Organizational Unit (OU). The security control **"User must change password at next logon"** was enforced to ensure identity integrity.
-
-![Active Directory Password Reset](
-
-![AD Password Changed]Mars%20Password%20Change.jpg)
+![Mars Password Reset](Mars%20Password%20Reset.jpg)
+![Mars Password Change](Mars%20Password%20Change.jpg)
 
 ---
 
-## Step 6 — Incident Resolution in ServiceNow
-Once account remediation was verified, a customer-visible communication note was posted to the ticket, and the ServiceNow incident state was officially closed out as **Resolved**.
+### Step 6 — Incident Resolution in ServiceNow
 
-![Mars Incident Resolved](Mars_Incident_Resolved.jpg)
+With the Active Directory remediation completed and authentication verified, the incident ticket was formally updated to a **Resolved** status within the ServiceNow PDI, closing out the service loop.
+
+![Mars Incident Resolved](Mars%20Incident%20Resolved.jpg)
