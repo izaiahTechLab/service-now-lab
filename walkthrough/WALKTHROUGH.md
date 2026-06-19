@@ -34,9 +34,9 @@ An end-user, **Mars** (*TeamGalactic* group), submitted incident ticket `INC0010
 ## Step 5 — Account Remediation (Active Directory)
 To address the credential issue, the administrator performed a secure password reset within **Active Directory Users and Computers** under the designated `TeamGalactic` Organizational Unit (OU). The security control **"User must change password at next logon"** was enforced to ensure identity integrity.
 
-![Active Directory Password Reset](Mars%20Password%20Change.jpg)
+![Active Directory Password Reset](
 
-![AD Password Changed](Mars_Password_Change.jpg)
+![AD Password Changed]Mars%20Password%20Change.jpg)
 
 ---
 
