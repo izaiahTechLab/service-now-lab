@@ -14,7 +14,7 @@ Users were provisioned using a standardized corporate naming convention (`firstn
 
 Five distinct assignment groups were created within ServiceNow to mirror the enterprise factions established in the AD lab environment: **TeamAqua**, **TeamGalactic**, **TeamMagma**, **TeamPlasma**, and **TeamRocket**.
 
-![Created Groups](Created%20Groups%20in%20ServiceNow..jpg)
+![Assigning Groups](Assigning%20Groups.jpg)
 
 ---
 
@@ -31,7 +31,7 @@ To test the cross-platform integration, an end-to-end password lockout scenario 
 Following initial user record creation and incoming ticket verification, account passwords were configured using the **Set Password** utility. Security controls were set to "Password never expires" strictly for isolated lab testing purposes.
 
 ![Creating Password](Creating%20Password.jpg)
-![Assigning Groups](Assigning%20Groups.jpg)
+
 
 ---
 
